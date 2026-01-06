@@ -156,7 +156,7 @@ export default function TruechemMembership() {
 
           {/* Hero */}
           <section className="py-24 sm:py-32 px-6">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto text-center">
               <div className="mb-8">
                 <span className="inline-block px-3 py-1.5 bg-zinc-900 border border-zinc-800 text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-mono">
                   Member Access
@@ -165,7 +165,7 @@ export default function TruechemMembership() {
               <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-[-0.02em] text-white">
                 Recovery &<br />Performance.
               </h1>
-              <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl leading-relaxed">
+              <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Verified quality. Third-party tested. US-manufactured compounds for serious researchers and athletes.
               </p>
               <button 
