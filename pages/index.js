@@ -62,12 +62,12 @@ export default function TruechemMembership() {
 
   // Demo product data - actual truechem products
   const products = [
-    { id: 1, name: 'Retatrutide', category: 'GLP-1', purity: '99.4%', price: 189, inStock: true },
-    { id: 2, name: 'GHK-Cu', category: 'Recovery', purity: '99.1%', price: 89, inStock: true },
-    { id: 3, name: 'CJC-1295/Ipamorelin', category: 'Growth', purity: '99.3%', price: 149, inStock: true },
-    { id: 4, name: 'BPC-157/TB-500', category: 'Recovery', purity: '99.2%', price: 129, inStock: true },
-    { id: 5, name: 'SLU-PP-332', category: 'Metabolic', purity: '99.5%', price: 219, inStock: true },
-    { id: 6, name: 'Injectable L-Carnitine', category: 'Metabolic', purity: '99.2%', price: 79, inStock: true },
+    { id: 1, name: 'Retatrutide', category: 'GLP-1', price: 189, inStock: true },
+    { id: 2, name: 'GHK-Cu', category: 'Recovery', price: 89, inStock: true },
+    { id: 3, name: 'CJC-1295/Ipamorelin', category: 'Growth', price: 149, inStock: true },
+    { id: 4, name: 'BPC-157/TB-500', category: 'Recovery', price: 129, inStock: true },
+    { id: 5, name: 'SLU-PP-332', category: 'Metabolic', price: 219, inStock: true },
+    { id: 6, name: 'Injectable L-Carnitine', category: 'Metabolic', price: 79, inStock: true },
   ];
 
   const addToCart = () => {
@@ -155,19 +155,13 @@ export default function TruechemMembership() {
           </header>
 
           {/* Hero */}
-          <section className="py-24 sm:py-32 px-6">
+          <section className="py-32 sm:py-40 px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="mb-8">
-                <span className="inline-block px-3 py-1.5 bg-zinc-900 border border-zinc-800 text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-mono">
-                  Member Access
-                </span>
-              </div>
-              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-[1.05] tracking-[-0.02em] text-white">
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-[-0.02em] text-white">
                 Recovery &<br />Performance.
               </h1>
-              <p className="text-zinc-500 text-sm font-mono tracking-wider uppercase mb-6">Verified quality.</p>
-              <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Verified quality. Third-party tested. US-manufactured compounds for serious researchers and athletes.
+              <p className="text-zinc-400 text-lg sm:text-xl mb-10">
+                Verified, third-party tested compounds.
               </p>
               <button 
                 onClick={() => navigateTo('signup')}
@@ -179,21 +173,21 @@ export default function TruechemMembership() {
             </div>
           </section>
 
-          {/* Stats Bar */}
-          <section className="border-y border-zinc-800 py-10 px-6">
+          {/* Proof Strip */}
+          <section className="py-16 px-6 border-t border-zinc-800">
             <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">99%+ Purity</div>
-                  <div className="text-xs text-zinc-500 font-mono">Third-party tested.</div>
+                  <div className="font-display text-xl sm:text-2xl font-bold tracking-[-0.01em] mb-1">99%+ Purity</div>
+                  <div className="text-sm text-zinc-500">Third-party tested</div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">Same-Day Processing</div>
-                  <div className="text-xs text-zinc-500 font-mono">Mon–Wed. Expedited options available.</div>
+                  <div className="font-display text-xl sm:text-2xl font-bold tracking-[-0.01em] mb-1">Same-Day Processing</div>
+                  <div className="text-sm text-zinc-500">Mon–Wed availability</div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">COA Verified</div>
-                  <div className="text-xs text-zinc-500 font-mono">Every batch documented.</div>
+                  <div className="font-display text-xl sm:text-2xl font-bold tracking-[-0.01em] mb-1">COA Verified</div>
+                  <div className="text-sm text-zinc-500">Every batch documented</div>
                 </div>
               </div>
             </div>
@@ -779,10 +773,6 @@ export default function TruechemMembership() {
                     </div>
                     
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-zinc-500 font-mono uppercase tracking-wider">Purity:</span>
-                        <span className="text-sm font-mono text-green-500">{product.purity}</span>
-                      </div>
                       <span className={`text-xs font-mono ${product.inStock ? 'text-green-500' : 'text-red-500'}`}>
                         {product.inStock ? 'In Stock' : 'Out of Stock'}
                       </span>
@@ -975,7 +965,6 @@ export default function TruechemMembership() {
                       <h3 className="font-display font-semibold mb-1">{product.name}</h3>
                       <div className="flex items-center gap-4 text-sm text-zinc-500 font-mono">
                         <span>Batch: TC-2025-{String(product.id).padStart(4, '0')}</span>
-                        <span>Purity: <span className="text-green-500">{product.purity}</span></span>
                       </div>
                     </div>
                     <div className="flex gap-2">
