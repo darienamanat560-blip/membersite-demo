@@ -60,14 +60,14 @@ export default function TruechemMembership() {
     </div>
   );
 
-  // Demo product data
+  // Demo product data - actual truechem products
   const products = [
-    { id: 1, name: 'Compound RT-01', category: 'Metabolic', purity: '99.4%', price: 189, inStock: true },
-    { id: 2, name: 'Compound SP-02', category: 'Metabolic', purity: '99.1%', price: 149, inStock: true },
-    { id: 3, name: 'Compound SM-03', category: 'GLP-1', purity: '99.3%', price: 129, inStock: true },
-    { id: 4, name: 'Compound TZ-04', category: 'GLP-1', purity: '99.2%', price: 159, inStock: false },
-    { id: 5, name: 'Compound GH-05', category: 'Growth', purity: '99.5%', price: 219, inStock: true },
-    { id: 6, name: 'Compound BPC-06', category: 'Recovery', purity: '99.2%', price: 89, inStock: true },
+    { id: 1, name: 'Retatrutide', category: 'GLP-1', purity: '99.4%', price: 189, inStock: true },
+    { id: 2, name: 'GHK-Cu', category: 'Recovery', purity: '99.1%', price: 89, inStock: true },
+    { id: 3, name: 'CJC-1295/Ipamorelin', category: 'Growth', purity: '99.3%', price: 149, inStock: true },
+    { id: 4, name: 'BPC-157/TB-500', category: 'Recovery', purity: '99.2%', price: 129, inStock: true },
+    { id: 5, name: 'SLU-PP-332', category: 'Metabolic', purity: '99.5%', price: 219, inStock: true },
+    { id: 6, name: 'Injectable L-Carnitine', category: 'Metabolic', purity: '99.2%', price: 79, inStock: true },
   ];
 
   const addToCart = () => {
@@ -180,20 +180,20 @@ export default function TruechemMembership() {
           </section>
 
           {/* Stats Bar */}
-          <section className="border-y border-zinc-800 py-8 px-6">
+          <section className="border-y border-zinc-800 py-10 px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em]">99%+</div>
-                  <div className="text-[10px] text-zinc-500 uppercase tracking-[0.15em] mt-1 font-mono">Purity</div>
+                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">99%+ Purity</div>
+                  <div className="text-xs text-zinc-500 font-mono">Third-party tested.</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em]">24HR</div>
-                  <div className="text-[10px] text-zinc-500 uppercase tracking-[0.15em] mt-1 font-mono">Shipping</div>
+                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">Same-Day Processing</div>
+                  <div className="text-xs text-zinc-500 font-mono">Mon–Wed. Expedited options available.</div>
                 </div>
                 <div>
-                  <div className="font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em]">100%</div>
-                  <div className="text-[10px] text-zinc-500 uppercase tracking-[0.15em] mt-1 font-mono">Verified</div>
+                  <div className="font-display text-2xl sm:text-3xl font-bold tracking-[-0.02em] mb-1">COA Verified</div>
+                  <div className="text-xs text-zinc-500 font-mono">Every batch documented.</div>
                 </div>
               </div>
             </div>
