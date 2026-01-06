@@ -162,9 +162,10 @@ export default function TruechemMembership() {
                   Member Access
                 </span>
               </div>
-              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-[-0.02em] text-white">
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-[1.05] tracking-[-0.02em] text-white">
                 Recovery &<br />Performance.
               </h1>
+              <p className="text-zinc-500 text-sm font-mono tracking-wider uppercase mb-6">Verified quality.</p>
               <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Verified quality. Third-party tested. US-manufactured compounds for serious researchers and athletes.
               </p>
@@ -283,9 +284,9 @@ export default function TruechemMembership() {
               {/* Pricing Card */}
               <div className="border border-zinc-700 p-8 text-center hover:border-zinc-500 transition-colors">
                 <div className="mb-6">
-                  <div className="font-display text-6xl font-bold mb-2 tracking-[-0.02em]">
+                  <div className="font-mono text-6xl font-bold mb-2 italic">
                     {selectedPlan === 'monthly' ? '$29' : '$279'}
-                    <span className="text-xl text-zinc-500 font-normal">/{selectedPlan === 'monthly' ? 'mo' : 'yr'}</span>
+                    <span className="text-xl text-zinc-500 font-normal not-italic">/{selectedPlan === 'monthly' ? 'mo' : 'yr'}</span>
                   </div>
                   {selectedPlan === 'yearly' && (
                     <div className="text-sm text-green-500 font-mono">$23.25/mo billed annually</div>

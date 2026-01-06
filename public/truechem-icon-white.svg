@@ -1,0 +1,10 @@
+<svg width="48" height="68" viewBox="0 0 48 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cap -->
+  <rect x="12" y="2" width="24" height="10" rx="2" fill="white"/>
+  <!-- Neck connectors -->
+  <path d="M14 12V18H34V12" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Body outline -->
+  <path d="M14 18V56C14 61.5228 18.4772 66 24 66C29.5228 66 34 61.5228 34 56V18" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Fill level -->
+  <path d="M17 40V56C17 59.866 20.134 63 24 63C27.866 63 31 59.866 31 56V40H17Z" fill="white"/>
+</svg>

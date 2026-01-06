@@ -1,0 +1,17 @@
+<svg width="200" height="68" viewBox="0 0 200 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vial Icon -->
+  <g>
+    <!-- Cap -->
+    <rect x="8" y="10" width="20" height="8" rx="1.5" fill="#1a1a1a"/>
+    <!-- Neck connectors -->
+    <path d="M10 18V23H26V18" stroke="#1a1a1a" stroke-width="2.5" fill="none"/>
+    <!-- Body outline -->
+    <path d="M10 23V52C10 56.4183 13.5817 60 18 60C22.4183 60 26 56.4183 26 52V23" stroke="#1a1a1a" stroke-width="2.5" fill="none"/>
+    <!-- Fill level -->
+    <path d="M12.5 38V52C12.5 55.0376 14.9624 57.5 18 57.5C21.0376 57.5 23.5 55.0376 23.5 52V38H12.5Z" fill="#1a1a1a"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="38" y="44" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="24" fill="#1a1a1a" letter-spacing="0.12em">
+    <tspan font-weight="700">true</tspan><tspan font-weight="400">chem</tspan>
+  </text>
+</svg>
