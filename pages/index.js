@@ -284,12 +284,12 @@ export default function TruechemMembership() {
               {/* Pricing Card */}
               <div className="border border-zinc-700 p-8 text-center hover:border-zinc-500 transition-colors">
                 <div className="mb-6">
-                  <div className="font-display text-6xl font-bold mb-2 tracking-[-0.02em]">
+                  <div className="text-5xl font-bold mb-2">
                     {selectedPlan === 'monthly' ? '$29' : '$279'}
-                    <span className="text-xl text-zinc-500 font-normal">/{selectedPlan === 'monthly' ? 'mo' : 'yr'}</span>
+                    <span className="text-lg text-zinc-500 font-normal">/{selectedPlan === 'monthly' ? 'mo' : 'yr'}</span>
                   </div>
                   {selectedPlan === 'yearly' && (
-                    <div className="text-sm text-green-500 font-mono">$23.25/mo billed annually</div>
+                    <div className="text-sm text-green-500">$23.25/mo billed annually</div>
                   )}
                 </div>
 
