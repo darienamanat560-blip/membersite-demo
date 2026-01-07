@@ -157,11 +157,12 @@ export default function TruechemMembership() {
           {/* Hero */}
           <section className="py-32 sm:py-40 px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-[-0.02em] text-white">
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-[1.05] tracking-[-0.02em] text-white">
                 Recovery &<br />Performance.
               </h1>
+              <p className="text-zinc-500 text-sm font-mono tracking-[0.15em] uppercase mb-6">Verified Quality.</p>
               <p className="text-zinc-400 text-lg sm:text-xl mb-10">
-                Verified, third-party tested compounds.
+                US-manufactured, third-party tested compounds.
               </p>
               <button 
                 onClick={() => navigateTo('signup')}
@@ -208,9 +209,9 @@ export default function TruechemMembership() {
                   { icon: Mail, title: 'Priority Access', desc: 'First access to new products, restocks, and limited releases. Members get notified before the public.' },
                   { icon: Users, title: 'Direct Support', desc: 'Questions? Our team responds within 24 hours. Real support from people who understand what you\'re working on.' },
                 ].map((item, i) => (
-                  <div key={i} className="border border-zinc-800 p-8 hover:border-zinc-700 transition-all duration-300 hover:-translate-y-1 group">
-                    <div className="w-12 h-12 border border-zinc-700 flex items-center justify-center mb-6 group-hover:border-zinc-500 transition-colors">
-                      <item.icon size={22} className="text-white" />
+                  <div key={i} className="border border-zinc-800 p-8 hover:border-teal-400/50 transition-all duration-300 group">
+                    <div className="w-12 h-12 border border-zinc-700 flex items-center justify-center mb-6 group-hover:border-teal-400/50 transition-colors">
+                      <item.icon size={22} className="text-teal-400" />
                     </div>
                     <h3 className="font-display text-xl font-semibold mb-3">{item.title}</h3>
                     <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
